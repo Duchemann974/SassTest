@@ -1,16 +1,28 @@
+@import "reset.css";
+
+
+
+
 
 @mixin test {
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
+    
 }
 
 
 
 
 
-div{
+ .tests{
     background: green;
+    display: block;
+    width: 750px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    
     
     h1{
         color: blue;
@@ -18,6 +30,21 @@ div{
     }
     p{
         color: white;
+        padding-top: 20px;
         @include test
     }
+}
+
+.features{
+    display: flex;
+    margin-top: 60px;
+    border: solid 4px cyan;
+    border-radius: 10px;
+    background-color: green;
+}img{
+    padding-right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}p{
+    padding: 15px;
 }
