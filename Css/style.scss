@@ -1,0 +1,23 @@
+
+@mixin test {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+div{
+    background: green;
+    
+    h1{
+        color: blue;
+        @include test
+    }
+    p{
+        color: white;
+        @include test
+    }
+}
